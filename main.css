@@ -88,16 +88,20 @@ section {
 }
 
 @keyframes floatTag {
+
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
   }
+
   25% {
     transform: translateY(-20px) rotate(5deg);
   }
+
   50% {
     transform: translateY(0) rotate(0deg);
   }
+
   75% {
     transform: translateY(20px) rotate(-5deg);
   }
@@ -127,16 +131,20 @@ section {
 }
 
 @keyframes floatSvg {
+
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
   }
+
   25% {
     transform: translateY(-30px) rotate(5deg);
   }
+
   50% {
     transform: translateY(0) rotate(10deg);
   }
+
   75% {
     transform: translateY(30px) rotate(5deg);
   }
@@ -186,15 +194,19 @@ section {
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
+
   25% {
     transform: translate(50px, 50px) rotate(90deg);
   }
+
   50% {
     transform: translate(100px, 0) rotate(180deg);
   }
+
   75% {
     transform: translate(50px, -50px) rotate(270deg);
   }
+
   100% {
     transform: translate(0, 0) rotate(360deg);
   }
@@ -247,16 +259,20 @@ section {
 }
 
 @keyframes floatCube {
+
   0%,
   100% {
     transform: translateY(0) rotateX(45deg) rotateY(45deg);
   }
+
   25% {
     transform: translateY(-30px) rotateX(65deg) rotateY(65deg);
   }
+
   50% {
     transform: translateY(0) rotateX(125deg) rotateY(125deg);
   }
+
   75% {
     transform: translateY(30px) rotateX(185deg) rotateY(185deg);
   }
@@ -304,10 +320,12 @@ section {
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -451,6 +469,7 @@ footer {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -461,9 +480,11 @@ footer {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -474,6 +495,7 @@ footer {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -485,6 +507,7 @@ footer {
     opacity: 1;
     transform: scale(1);
   }
+
   to {
     opacity: 0;
     transform: scale(0.8);
@@ -502,6 +525,7 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
+
   .hero-content,
   .about-container,
   .contact-container {
@@ -577,6 +601,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
   .about-buttons,
   .tech-stack,
   .hero-buttons {

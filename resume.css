@@ -12,7 +12,7 @@
 .resume-header {
   text-align: center;
   margin-bottom: 50px;
-  
+
 }
 
 .section-subtitle {
@@ -72,9 +72,11 @@
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -231,6 +233,7 @@
   from {
     transform: scaleX(0);
   }
+
   to {
     transform: scaleX(1);
   }
@@ -346,7 +349,7 @@
 @media screen and (max-width: 768px) {
   .resume-content {
     flex-direction: column;
-    
+
   }
 
   .resume-left,

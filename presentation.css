@@ -1,0 +1,231 @@
+/* Presentations Section */
+.presentations-section {
+  padding: 80px 0;
+}
+
+.presentations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.presentations-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.presentations-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background-color: var(--background-light);
+  color: var(--text-secondary);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  color: var(--text-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(136, 63, 255, 0.2);
+}
+
+.filter-btn.active {
+  background: var(--gradient);
+  color: var(--text-color);
+}
+
+.presentations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.presentation-card {
+  background-color: var(--background-light);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  opacity: 1;
+  transform: scale(1);
+  height: auto;
+}
+
+.presentation-card.hide {
+  display: none;
+}
+
+.presentation-card.show {
+  animation: fadeIn 0.5s forwards;
+}
+
+.presentation-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.presentation-image {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.presentation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.presentation-card:hover .presentation-image img {
+  transform: scale(1.1);
+}
+
+.presentation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 16, 30, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.presentation-card:hover .presentation-overlay {
+  opacity: 1;
+}
+
+.presentation-preview {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.presentation-card:hover .presentation-preview {
+  transform: translateY(0);
+}
+
+.preview-link {
+  width: 50px;
+  height: 50px;
+  background: var(--gradient);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.presentation-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.presentation-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.presentation-info p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.presentation-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.presentation-tech span {
+  background-color: rgba(136, 63, 255, 0.1);
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.presentation-links {
+  display: flex;
+  gap: 15px;
+}
+
+.presentation-links a {
+  font-size: 18px;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.presentation-links a:hover {
+  color: var(--primary-color);
+}
+
+.no-results {
+  display: none;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: var(--background-light);
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+.no-results p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.presentations-cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.presentations-cta p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.presentations-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient);
+  color: var(--text-color);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.presentations-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(136, 63, 255, 0.3);
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .presentations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .presentations-filter {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto 30px;
+  }
+}
